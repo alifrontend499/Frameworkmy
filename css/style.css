@@ -1,0 +1,128 @@
+/*FLEX*/
+/*----------PROPERTIES APPLICABLE ON PARENT OF FLEX ITEMS----------*/
+/*column , column-reverse , row , row-reverse*/
+/*nowrap , wrap , wrap-reverse*/
+/*FLEX JUSTIFY CONTENT*/
+/*space-between , space-around*/
+/*FLEX ALIGN ITEMS*/
+/*center , stretch*/
+/*----------PROPERTIES APPLICABLE ON FLEX ITEMS----------*/
+/*ORDER*/
+/*GROW*/
+/*SHRINK*/
+/*BASSIS*/
+.container-fluid { width: 100%; }
+
+.container { float: none; margin-left: auto; margin-right: auto; }
+
+.container-fluid:after, .container:after { content: ""; clear: both; display: block; }
+
+@media (min-width: 0) { .container { width: 100%; } }
+@media (min-width: 768px) { .container { width: 750px; } }
+@media (min-width: 992px) { .container { width: 970px; } }
+@media (min-width: 1200px) { .container { width: 1190px; } }
+@media (min-width: 500px) { .xs-1 { width: 8.3333333333%; }
+  .xs-2 { width: 16.6666666667%; }
+  .xs-3 { width: 25%; }
+  .xs-4 { width: 33.3333333333%; }
+  .xs-5 { width: 41.6666666667%; }
+  .xs-6 { width: 50%; }
+  .xs-7 { width: 58.3333333333%; }
+  .xs-8 { width: 66.6666666667%; }
+  .xs-9 { width: 75%; }
+  .xs-10 { width: 83.3333333333%; }
+  .xs-11 { width: 91.6666666667%; }
+  .xs-12 { width: 100%; } }
+@media (min-width: 501px) { .sm-1 { width: 8.3333333333%; }
+  .sm-2 { width: 16.6666666667%; }
+  .sm-3 { width: 25%; }
+  .sm-4 { width: 33.3333333333%; }
+  .sm-5 { width: 41.6666666667%; }
+  .sm-6 { width: 50%; }
+  .sm-7 { width: 58.3333333333%; }
+  .sm-8 { width: 66.6666666667%; }
+  .sm-9 { width: 75%; }
+  .sm-10 { width: 83.3333333333%; }
+  .sm-11 { width: 91.6666666667%; }
+  .sm-12 { width: 100%; } }
+@media (min-width: 768px) { .md-1 { width: 8.3333333333%; }
+  .md-2 { width: 16.6666666667%; }
+  .md-3 { width: 25%; }
+  .md-4 { width: 33.3333333333%; }
+  .md-5 { width: 41.6666666667%; }
+  .md-6 { width: 50%; }
+  .md-7 { width: 58.3333333333%; }
+  .md-8 { width: 66.6666666667%; }
+  .md-9 { width: 75%; }
+  .md-10 { width: 83.3333333333%; }
+  .md-11 { width: 91.6666666667%; }
+  .md-12 { width: 100%; } }
+@media (min-width: 992px) { .lg-1 { width: 8.3333333333%; }
+  .lg-2 { width: 16.6666666667%; }
+  .lg-3 { width: 25%; }
+  .lg-4 { width: 33.3333333333%; }
+  .lg-5 { width: 41.6666666667%; }
+  .lg-6 { width: 50%; }
+  .lg-7 { width: 58.3333333333%; }
+  .lg-8 { width: 66.6666666667%; }
+  .lg-9 { width: 75%; }
+  .lg-10 { width: 83.3333333333%; }
+  .lg-11 { width: 91.6666666667%; }
+  .lg-12 { width: 100%; } }
+@media (min-width: 1200px) { .xl-1 { width: 8.3333333333%; }
+  .xl-2 { width: 16.6666666667%; }
+  .xl-3 { width: 25%; }
+  .xl-4 { width: 33.3333333333%; }
+  .xl-5 { width: 41.6666666667%; }
+  .xl-6 { width: 50%; }
+  .xl-7 { width: 58.3333333333%; }
+  .xl-8 { width: 66.6666666667%; }
+  .xl-9 { width: 75%; }
+  .xl-10 { width: 83.3333333333%; }
+  .xl-11 { width: 91.6666666667%; }
+  .xl-12 { width: 100%; } }
+* { box-sizing: border-box; }
+
+.border { border: 1px solid #333; }
+
+.comon-padding { padding-left: 15px; padding-right: 15px; }
+
+.ul-inline { list-style-type: none; padding: 0; }
+.ul-inline > li { display: inline-block; padding: 0 5px; }
+
+.ul-unstyled { list-style-type: none; }
+
+button { border-radius: 0; border: 1px solid #ddd; padding: 5px; }
+
+.clear-parent:after { content: ""; clear: both; display: block; }
+
+.col { float: left; }
+
+.inline-child { display: inline-block; margin-right: -4px; vertical-align: top; }
+
+.img-responsive { max-width: 100%; max-height: 100%; display: block; height: auto; }
+
+.primary-color-color { color: #02344f; }
+
+.secondary-color-color { color: #f26302; }
+
+.primary-color-bg-color { background-color: #02344f; }
+
+.secondary-color-bg-color { background-color: #f26302; }
+
+body { margin: 0; line-height: 1.3; }
+
+p, h1, h2, h3, h4, h5, h6, ul { margin: 0; }
+
+button { border-radius: 0; }
+
+body { font-family: calibri, Arial; }
+
+.site-top-sec { padding-top: 3px; padding-bottom: 3px; }
+.site-top-sec > ul { display: table; float: right; }
+.site-top-sec > ul > li { color: #fff; }
+.site-top-sec > ul > li > span { vertical-align: middle; }
+.site-top-sec > ul > li .img { margin-right: 3px; }
+.site-top-sec > ul > li .text { position: relative; top: -1px; font-size: 14px; color: #dfdfdf; }
+
+/*# sourceMappingURL=style.css.map */
