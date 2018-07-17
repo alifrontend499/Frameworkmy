@@ -5,7 +5,7 @@
 .border {
   @include border;
 }
-.comon-padding {
+.com-pad-lr {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -33,10 +33,6 @@ button {
   content: "";
   clear: both;
   display: block;
-}
-
-.col {
-  float: left;
 }
 
 .inline-child {

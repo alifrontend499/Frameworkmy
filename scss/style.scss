@@ -3,33 +3,32 @@
 @import "components/_flexbox";
 @import "components/_grid";
 @import "components/_comon";
+@import "components/_display";
 @import "components/_reset";
-
 body {
-  font-family: calibri, Arial;
+    font-family: calibri, Arial;
 }
 
 // site top sec
-.site-top-sec {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  > ul {
-    display: table;
-    float: right;
-    > li {
-      color: #fff;
-      > span {
-        vertical-align: middle;
-      }
-      .img {
-        margin-right: 3px;
-      }
-      .text {
-        position: relative;
-        top: -1px;
-        font-size: 14px;
-        color: #dfdfdf;
-      }
+.header-inner {
+    @include align_items_CenterStretch(center);
+    background: #ebebeb;
+    .right {
+        ul {
+            width: 100%;
+            text-align: right;
+            >li {
+                font-size: 25px;
+                >a {
+                    outline: none;
+                    text-decoration: none;
+                    color: #e5055e;
+                    @include transition;
+                    &:hover {
+                        color: #970071;
+                    }
+                }
+            }
+        }
     }
-  }
 }
